@@ -78,10 +78,15 @@ Troubleshoot:
 
 Files:
 /etc/X11/mhwd.d/intel-modesetting.conf: X config for modesetting
-/etc/X11/mhwd.d/intel.conf: X config for intel gpu
-/etc/X11/mhwd.d/nvidia.conf: X config for nvidia gpu
-/etc/X11/xinit/xinitrc.d/99-xrandr-prime.sh: xrandr commands
-/usr/local/bin/prime-switch: python script for switching gpus
-/usr/local/share/nvidia-prime-switch/prime-switch-conf.json: json configuration file for prime-switch
-/usr/share/libalpm/hooks/nvidia-prime-displaymanager.hook: reminder to (re)install correct nvidia-prime package in case display manager changes
 
+/etc/X11/mhwd.d/intel.conf: X config for intel gpu
+
+/etc/X11/mhwd.d/nvidia.conf: X config for nvidia gpu
+
+/etc/X11/xinit/xinitrc.d/99-xrandr-prime.sh: xrandr commands
+
+/usr/local/bin/prime-switch: python script for switching gpus
+
+/usr/local/share/nvidia-prime-switch/prime-switch-conf.json: json configuration file for prime-switch
+
+/usr/share/libalpm/hooks/nvidia-prime-displaymanager.hook: reminder to (re)install correct nvidia-prime package in case display manager changes
