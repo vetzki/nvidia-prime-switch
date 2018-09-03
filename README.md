@@ -1,7 +1,7 @@
-## nvidia-prime-switch-nodm for nvidia or nvidia-390xx
+#### nvidia-prime-switch-nodm for nvidia or nvidia-390xx
 
-## This package is for optimus based laptops and allow switching between nvidia and intel card
-## intented for usage without display manager
+#### This package is for optimus based laptops and allow switching between nvidia and intel card
+#### intented for usage without display manager
 
 install either
 `linux-Your_kernel_version(s)-nvidia module(s), nvidia-utils and lib32-nvidia-utils`
@@ -78,10 +78,15 @@ Troubleshoot:
 
 Files:
 /etc/X11/mhwd.d/intel-modesetting.conf: X config for modesetting
-/etc/X11/mhwd.d/intel.conf: X config for intel gpu
-/etc/X11/mhwd.d/nvidia.conf: X config for nvidia gpu
-/etc/X11/xinit/xinitrc.d/99-xrandr-prime.sh: xrandr commands
-/usr/local/bin/prime-switch: python script for switching gpus
-/usr/local/share/nvidia-prime-switch/prime-switch-conf.json: json configuration file for prime-switch
-/usr/share/libalpm/hooks/nvidia-prime-displaymanager.hook: reminder to (re)install correct nvidia-prime package in case display manager changes
 
+/etc/X11/mhwd.d/intel.conf: X config for intel gpu
+
+/etc/X11/mhwd.d/nvidia.conf: X config for nvidia gpu
+
+/etc/X11/xinit/xinitrc.d/99-xrandr-prime.sh: xrandr commands
+
+/usr/local/bin/prime-switch: python script for switching gpus
+
+/usr/local/share/nvidia-prime-switch/prime-switch-conf.json: json configuration file for prime-switch
+
+/usr/share/libalpm/hooks/nvidia-prime-displaymanager.hook: reminder to (re)install correct nvidia-prime package in case display manager changes

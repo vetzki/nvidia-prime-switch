@@ -5,18 +5,18 @@ pkgdesc="Setup nvidia and intel for optimus based laptops without bumblebee"
 license=("none")
 kernelvers="$(uname -r | awk -F "." '{print $1 $2}')"
 depends=('xf86-video-intel' 'python')
-optdepends=("linux${kernelvers}-nvidia" "linux${kernelvers}-nvidia-390xx" 'lib32-nvidia-utils' 'nvidia-utils' "linux${kernelvers}-nvidia-390xx" 'lib32-nvidia-390xx-utils' 'nvidia-390xx-utils')
+optdepends=("linux${kernelvers}-nvidia" 'lib32-nvidia-utils' 'nvidia-utils' "linux${kernelvers}-nvidia-390xx" 'lib32-nvidia-390xx-utils' 'nvidia-390xx-utils')
 makedepends=('python')
 conflicts=('nvidia-prime-switch-sddm' 'nvidia-prime-switch-lightdm')
 source=('prime-switch.py' 'prime-switch-conf.json' '99-xrandr-prime.sh' 'intel.conf' 'nvidia.conf' 'intel-modesetting.conf' 'nvidia-prime-displaymanager.hook')
 sha256sums=(
 '001dd4e5c011d365a88f0095205aefe04b46cacd8cc70fda6460584ac55db5cb'
 '574138661177cc5042636f237c8adc2e934a38adb7bf2851acd35d0115ca8569'
-'a9a20f98a94fe75f8b3a89868b9c0f66124fab8ff89b9cb535eeeaa6fbe74fba'
+'2f9dca4dc2a103d9779840fe89e76e177935feaf9b82c6c90619bcf330b3b670'
 'b7e686d0f689c9d7e2d99ffa6a3b3c110730e36a911b5672f711551b3e41d6a8'
 '8e0473885e05c7a3b00380db251884456a29111544f94faeabd945b442595891'
 'edd5b3968e0cf46dcc13a8335f71291b19355c8fc75c8c3af597540fe548c929'
-'73a67c2ba8f77253fbb1c36194fb29dd7aa6babeff2174078a8abff87265d604'
+'547ca622632e234f04900a46e5652ea5c77b252595689b22c8e46f81a800173f'
 )
 
 arch=('x86_64')
