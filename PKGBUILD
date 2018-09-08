@@ -1,6 +1,6 @@
 pkgname="nvidia-prime-switch"
 pkgver=1
-pkgrel=7
+pkgrel=8
 pkgdesc="Setup nvidia and intel for optimus based laptops without bumblebee (current nvidia driver)"
 license=("none")
 kernelvers="$(uname -r | awk -F "." '{print $1 $2}')"
