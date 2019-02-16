@@ -3,3 +3,4 @@
 /nvidia-prime-switch.tar.gz
 /pkg/*
 /src/*
+*.py.bak*
