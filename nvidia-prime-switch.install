@@ -1,0 +1,10 @@
+pre_install() {
+printf "\033[1m%s\033[0m\n" \
+"Don't forget to install the correct" \
+"" \
+"nvidia kernel modules" \
+"nvidia-utils" \
+"lib32-nvidia-utils" \
+"" \
+"packages for your gpu (390xx for fermi, for newer gpus regular ones)"
+}
