@@ -1,6 +1,6 @@
 pkgname="nvidia-prime-switch"
 pkgver=1
-pkgrel=9
+pkgrel=10
 pkgdesc="Setup nvidia and intel for optimus based laptops without bumblebee"
 license=("none")
 install="${pkgname}".install
